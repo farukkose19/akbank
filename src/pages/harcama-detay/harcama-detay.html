@@ -5,11 +5,69 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="danger">
     <ion-title>harcama-detay</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+    <canvas id="pieChart" width="800" height="800"></canvas>
+    <br>
+    <div class="align-items-center justify-content-center" style="font-size: 0.8em;">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-1" style="width: auto; height: 10px;"  [ngStyle]="{'background-color': colorList[0]}" >
+      </div>
+      <div class="col-5 " style="margin-left: -10px;">
+
+          {{kategoriler[0]}}
+          
+        </div>
+        <div class="col-1" style="width: 10px; height: 10px;"  [ngStyle]="{'background-color': colorList[1]}" >
+          </div>
+          <div class="col-5" style="margin-left: -10px;">
+              {{kategoriler[1]}}
+            </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+        <div class="col-1" style="width: auto; height: 10px;"  [ngStyle]="{'background-color': colorList[2]}" >
+        </div>
+        <div class="col-5" style="margin-left: -10px;">
+            {{kategoriler[2]}}
+          </div>
+          <div class="col-1" style="width: auto; height: 10px;"  [ngStyle]="{'background-color': colorList[3]}" >
+            </div>
+            <div class="col-5" style="margin-left: -10px;">
+                {{kategoriler[3]}}
+              </div>
+      </div>
+
+      <div class="row align-items-center justify-content-center">
+          <div class="col-1" style="width: auto; height: 10px;"  [ngStyle]="{'background-color': colorList[4]}" >
+          </div>
+          <div class="col-5" style="margin-left: -10px;">
+              {{kategoriler[4]}}
+            </div>
+            <div class="col-1" style="width: auto; height: 10px;"  [ngStyle]="{'background-color': colorList[5]}" >
+              </div>
+              <div class="col-5" style="margin-left: -10px;">
+                  {{kategoriler[5]}}
+                </div>
+        </div>
+
+        <div class="row align-items-center justify-content-center">
+            <div class="col-1" style="width: auto; height: 10px;"  [ngStyle]="{'background-color': colorList[6]}" >
+            </div>
+            <div class="col-5" style="margin-left: -10px;">
+                {{kategoriler[6]}}
+              </div>
+              <div class="col-1" style="width: auto; height: 10px;"  [ngStyle]="{'background-color': colorList[7]}" >
+                </div>
+                <div class="col-5" style="margin-left: -10px;">
+                    {{kategoriler[7]}}
+                  </div>
+          </div>
+
+    </div>
+
 
 </ion-content>

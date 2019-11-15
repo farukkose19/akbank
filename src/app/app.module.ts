@@ -9,6 +9,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { KampanyaDetayPage } from '../pages/kampanya-detay/kampanya-detay';
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -18,7 +19,7 @@ import { KampanyaDetayPage } from '../pages/kampanya-detay/kampanya-detay';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
