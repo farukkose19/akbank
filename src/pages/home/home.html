@@ -1,14 +1,193 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+<ion-header >
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="page no-scroll" overflow-scroll="false">
+    <div style="background-color: #DC0004; height: 300px;">
+        <br>
+        <br>
+        <br>
+        <div style="color: #FC6F74;margin-left: 15px;"> İyi günler Emel,</div>
+
+   
+        <br>
+        <div style="font-size: 22px; margin-left: 15px; color: #F5FEFD;" align="left">
+          Kasım ayının ilk iki haftasına ait harcama özetini hazırladık.
+        </div>
+
+        <br>
+        <button style="margin-left: 15px;" ion-button color="light" outline round>Detaylar</button>
+
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-8" style="color: gray; ">
+          <div class="ml-4" style="font-size: 0.8em;">
+             <strong>HESAPLAR VE KARTLAR</strong> 
+          </div>
+          </div>
+          <div class="col-4" style="color: red; font-size: 0.9em;" align="right">
+            <div class="mr-4">
+                <strong>Tümü</strong>
+            </div>
+          </div>
+    </div>
+
+    <br>
+    <div class="bg-white shadow mx-3 py-3 px-4 rounded-lg" style="height: 110px;">
+      <div class="row align-items-center" style=" margin-top: -5px; padding-top: 0;">
+        <div class="col-9">
+          BOSTANCI/OTO SANAYİ
+        </div>
+        <div class="col-3" style="font-size: 20px;">
+            <b>...</b>
+        </div>
+      </div>
+
+      <div class="row" style="font-size: 12px; color: gray; margin-top: -5px; padding-top: 0;">
+          <div class="col-10">
+            1502 - 0001959
+            </div>
+      </div>
+
+      <div class="row mt-3"  style="color: gray; font-size: 12px;">
+          <div class="col-10">
+           Kullanılabilir bakiye
+            </div>
+      </div>
+      <div class="row" >
+       <div class="col-8" style="font-size: 18px;"> 
+        <strong>35000,00 TL</strong>
+        </div>
+        <div class="col-4" style="font-size: 0.8em;">
+          VADESİZ
+          </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="bg-white shadow mx-3 py-3 px-4 rounded-lg" style="height: 110px;">
+        <div class="row align-items-center" style=" margin-top: -5px; padding-top: 0;">
+            <div class="col-9">
+              FREE
+            </div>
+            <div class="col-3" style="font-size: 20px;">
+                <b>...</b>
+            </div>
+          </div>
+    
+          <div class="row" style="font-size: 12px; color: gray; margin-top: -5px; padding-top: 0;">
+              <div class="col-10">
+                .... 2425
+                </div>
+          </div>
+    
+          <div class="row mt-3"  style="color: gray; font-size: 12px;">
+              <div class="col-10">
+               Kullanılabilir bakiye
+                </div>
+          </div>
+          <div class="row" >
+           <div class="col-8" style="font-size: 18px;"> 
+            <strong>35000,00 TL</strong>
+            </div>
+            <div class="col-4">
+                <img src="../../assets/imgs/aa.jpg" height="30" width="65">
+              </div>
+          </div>
+      </div>
+
+      <div class="row my-4  ">
+          <div class="col-8" style="color: gray; ">
+            <div class="ml-4" style="font-size: 0.8em;">
+               <strong>KISAYOLLAR</strong> 
+            </div>
+            </div>
+      </div>
+
+      <div class="row align-items-center mx-1 mb-4" (click)="click()">
+          <div class="col-3" align="left">
+            <button icon-only ion-fab style="width: 50px !important;
+            height: 50px !important;" color="light" class="bg-white">
+              <ion-icon style="color: red;" name="pulse"></ion-icon>
+            </button>
+          </div>
+          <div class="col-9">
+              <strong>Harcama yönetimi</strong>
+    
+          </div>
+        </div>
+
+    <div class="row align-items-center mx-1 mb-4">
+      <div class="col-3" align="left">
+        <button icon-only ion-fab style="width: 50px !important;
+        height: 50px !important;" color="light" class="bg-white">
+          <ion-icon style="color: red;" name="add"></ion-icon>
+        </button>
+      </div>
+      <div class="col-9">
+          <strong>Başvuru ve nakit ihtiyaçlar</strong>
+
+      </div>
+    </div>
+
+    <div class="row align-items-center mx-1 mb-4">
+        <div class="col-3" align="left">
+          <button icon-only ion-fab style="width: 50px !important;
+          height: 50px !important;" color="light" class="bg-white">
+            <ion-icon style="color: red;" name="trending-up"></ion-icon>
+          </button>
+        </div>
+        <div class="col-9">
+          <strong>Yatırım ve döviz işlemleri</strong>
+        </div>
+      </div>
+
+      <div class="row align-items-center mx-1 mb-4">
+          <div class="col-3" align="left">
+            <button icon-only ion-fab style="width: 50px !important;
+            height: 50px !important;" color="light" class="bg-white">
+              <ion-icon style="color: red;" name="stopwatch"></ion-icon>
+            </button>
+          </div>
+          <div class="col-7">
+            <strong>Kredi işlemleri</strong>
+          </div>
+        </div>
+        <div class="row align-items-center mx-1 mb-4">
+            <div class="col-3" align="left">
+              <button icon-only ion-fab style="width: 50px !important;
+              height: 50px !important;" color="light" class="bg-white">
+                <ion-icon style="color: red;" name="stats"></ion-icon>
+              </button>
+            </div>
+            <div class="col-7">
+              <strong>Tüm varlıklar</strong>
+            </div>
+          </div>
+          <div class="row align-items-center mx-1 mb-4">
+              <div class="col-3" align="left">
+                <button icon-only ion-fab style="width: 50px !important;
+                height: 50px !important;" color="light" class="bg-white">
+                  <ion-icon style="color: red;" name="basket"></ion-icon>
+                </button>
+              </div>
+              <div class="col-7">
+                <strong>Kampanyalar</strong>
+              </div>
+            </div>
+            <div class="row align-items-center mx-1 mb-4">
+                <div class="col-3" align="left">
+                  <button icon-only ion-fab style="width: 50px !important;
+                  height: 50px !important;" color="light" class="bg-white">
+                    <ion-icon style="color: red;" name="heart"></ion-icon>
+                  </button>
+                </div>
+                <div class="col-7">
+                  <strong>Senin için</strong>
+                </div>
+              </div>
+
 </ion-content>
