@@ -6,11 +6,18 @@
 -->
 <ion-header>
   <ion-navbar color="danger">
-    <ion-title>harcama-detay</ion-title>
+    <ion-title>Harcamalarım</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="page" padding>
+    <ion-item>
+        <ion-select placeholder="Aylar" [(ngModel)]="aySelection" (ionChange)="change()" interface="popover">
+          <ion-option *ngFor="let ay of aylar" value="{{ay}}">{{ay}}</ion-option>
+        </ion-select>
+      </ion-item>
+      <br>
+
     <canvas id="pieChart" width="800" height="800"></canvas>
     <br>
     <div class="align-items-center justify-content-center" style="font-size: 0.8em;">
@@ -22,7 +29,7 @@
           {{kategoriler[0]}}
           
         </div>
-        <div class="col-1" style="width: 10px; height: 10px;"  [ngStyle]="{'background-color': colorList[1]}" >
+        <div class="col-1" style="width: auto; height: 10px;"  [ngStyle]="{'background-color': colorList[1]}" >
           </div>
           <div class="col-5" style="margin-left: -10px;">
               {{kategoriler[1]}}
@@ -66,8 +73,54 @@
                     {{kategoriler[7]}}
                   </div>
           </div>
+    </div>
+
+
+
+    <div class="row mt-5 mb-2" *ngIf="veriler.length > 0">
+        <div class="col-8" style="color: gray; ">
+          <div class="ml-4" style="font-size: 0.8em;">
+             <strong>HARCAMA DETAY</strong> 
+          </div>
+          </div>
 
     </div>
 
+
+    <div *ngIf="veriler.length > 0" class="bg-white shadow rounded-lg py-3 px-5 mt-5">
+      <div  *ngFor="let i of veriler; let j = index">
+        <div class="row">
+          <div class="col-6">
+             <strong>{{i.name}} </strong> 
+          </div>
+          <div class="col-6 justify-content-end" align="right">
+              {{i.value}} TL
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-6" style="color: gray;">
+               istanbul  TR
+            </div>
+          </div>
+          <hr *ngIf="j !== veriler.length -1">
+      </div>
+    </div>
+
+    <ion-slides pager class="align-items-start" style="height: 80%;">
+        <ion-slide *ngFor="let slide of slides; let i = index">
+          <div class="border">
+              <img  width="auto" height="auto" src="../../assets/imgs/{{images[i]}}.jpeg" class="slide-image"/>
+          </div>
+        </ion-slide>
+    </ion-slides>
+
+    <button style="background-color: transparent;" id="giyim" name="giyim" #giyim (click)="gi()"></button>
+    <button style="background-color: transparent;" id="kisisel" name="kisisel" #kisisel (click)="k()"></button>
+    <button style="background-color: transparent;" id="kultur" name="kultur" #kultur (click)="ku()"></button>
+    <button style="background-color: transparent;" id="internet" name="internet" #internet (click)="i()"></button>
+    <button style="background-color: transparent;" id="gida" name="gida" #gida (click)="g()"></button>
+    <button style="background-color: transparent;" id="akaryakit" name="akaryakit" #akaryakit (click)="a()"></button>
+    <button style="background-color: transparent;" id="saglik" name="saglik" #saglik (click)="s()"></button>
+    <button style="background-color: transparent;" id="diger" name="diger" #diger (click)="d()"></button>
 
 </ion-content>
